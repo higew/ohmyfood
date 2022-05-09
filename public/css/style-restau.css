@@ -1,0 +1,161 @@
+body {
+  box-sizing: border-box;
+  margin: auto;
+  background-color: #fff;
+  font-family: Roboto;
+  color: #000;
+}
+
+header {
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+}
+header nav {
+  width: 100%;
+  margin: auto;
+}
+header nav a {
+  text-decoration: none;
+}
+header nav .ctn {
+  width: 100%;
+}
+header nav .ctn--logo {
+  padding: 20px;
+}
+header nav .ctn--logo .logo {
+  display: block;
+  background-image: url(../../images/ohmyfood.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 35px;
+  width: 50%;
+  margin: auto;
+}
+header nav .ctn--localisation {
+  display: flex;
+  flex-direction: row;
+  box-shadow: inset 0 8px 4px -4px rgba(0, 0, 0, 0.4);
+  background-color: #d1d1d1;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+header nav .ctn--localisation div {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+header nav .ctn--localisation div i {
+  padding: 10px;
+}
+header nav .ctn--localisation div p {
+  margin: auto;
+  text-align: center;
+  font-weight: 500;
+}
+
+main {
+  max-width: 768px;
+}
+main img {
+  width: 100%;
+  object-fit: cover;
+}
+main .ctn-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: -50px;
+  border-radius: 3rem 3rem 0 0;
+  background-color: #F2F2F2;
+  position: relative;
+}
+main .ctn-menu .title-restau {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+main .ctn-menu .title-restau h1 {
+  font-family: Shrikhand;
+  font-size: 30px;
+}
+main .ctn-menu .title-restau i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+main .ctn-menu .category {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+main .ctn-menu .category--title {
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 5px 0 5px 0;
+}
+main .ctn-menu .category--title:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 5%;
+  padding: 10px;
+  border-bottom: 3px solid #99E2D0;
+}
+main .ctn-menu .category .food {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 10px;
+  box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.2);
+}
+main .ctn-menu .category .food--bold {
+  font-size: 17px;
+  font-weight: 500;
+}
+main .ctn-menu .category .food--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .ctn-menu .category .food p {
+  padding: 5px 0 5px 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: #9356DC;
+  background: linear-gradient(149deg, #FF79DA 0%, #9356DC 100%);
+  border-radius: 3rem;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  margin-bottom: 40px;
+  box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  max-width: 768px;
+  background-color: rgb(61, 61, 61);
+  padding: 20px;
+  color: #fff;
+}
+footer .logo-footer {
+  background-image: url(../../images/ohmyfood@2x.svg);
+  filter: invert(1);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  margin: 10px 0px 10px 5px;
+}
+footer p {
+  font-size: 15px;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=style-restau.css.map */

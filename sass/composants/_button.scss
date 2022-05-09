@@ -1,0 +1,17 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: variables.$color-primary;
+    background: linear-gradient(149deg, variables.$color-secondary 0%, variables.$color-primary 100%);
+    border-radius: 3rem;
+    color: variables.$color-white;
+    padding: 20px;
+    border: none;
+    margin-bottom: 40px;
+    @include mixins.box-shadow(variables.$shadow);
+}

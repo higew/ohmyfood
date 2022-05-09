@@ -1,14 +1,21 @@
 //Fonts
 $mainfont: Roboto;
+$titlefont: Shrikhand;
 
 //Colors
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-white: #fff;
+$color-black: #000;
+$color-new: #265a37;
+$color-background-container: #F2F2F2;
 
 //Imgs
 $logo: url(../../images/ohmyfood.png);
 
 // Shadows
 $shadow: 0px 8px 15px -3px rgba(0,0,0,0.2);
+
+//Breakpoint
+$mobile: 768px;

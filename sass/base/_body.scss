@@ -1,0 +1,9 @@
+@use '../utils/variables';
+
+body {
+    box-sizing: border-box;
+    margin: auto;
+    background-color: variables.$color-white;
+    font-family: variables.$mainfont;
+    color: variables.$color-black;
+}
