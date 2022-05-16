@@ -64,8 +64,14 @@ header nav .ctn--localisation div p {
     opacity: 0;
   }
 }
+@keyframes rotate-spinner {
+  to {
+    transform: rotate(1080deg);
+  }
+}
 .loading-screen {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f7f7f7;
@@ -82,6 +88,19 @@ header nav .ctn--localisation div p {
   background-size: contain;
   height: 35px;
   width: 50%;
+}
+.loading-screen--spinner {
+  color: #99E2D0;
+  font-size: 20px;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  transition-timing-function: linear;
+  transition: 2s linear;
+  animation: rotate-spinner 4s infinite linear;
 }
 
 main {

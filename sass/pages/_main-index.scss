@@ -10,8 +10,16 @@
         opacity: 0;
     }
 }
+@keyframes rotate-spinner {
+    from {
+    }
+    to {
+        transform: rotate(1080deg);
+    }
+}
 .loading-screen {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #f7f7f7;
@@ -27,6 +35,19 @@
         background-size: contain;
         height: 35px;
         width: 50%;
+    }
+    &--spinner {
+        color: variables.$color-tertiary;
+        font-size: 20px;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        transition-timing-function: linear;
+        transition: 2s linear;
+        animation: rotate-spinner 4s infinite linear;
     }
 }
 main {
