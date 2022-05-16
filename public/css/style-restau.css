@@ -159,6 +159,25 @@ main .ctn-menu .category .food--selected .fa-check-circle {
   color: #fff;
   transition: transform 500ms ease-in-out;
 }
+@keyframes fadein {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+main .ctn-menu .first-plate {
+  animation: fadein 1s ease-in-out;
+}
+main .ctn-menu .second-plate {
+  animation: fadein 1.5s ease-in-out;
+}
+main .ctn-menu .third-plate {
+  animation: fadein 2s ease-in-out;
+}
 
 .btn {
   display: flex;

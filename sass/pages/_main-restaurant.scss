@@ -1,5 +1,6 @@
 @use '../utils/variables';
 @use '../utils/mixins';
+@use '../utils/keyframes';
 
 main {
     max-width: variables.$mobile;
@@ -101,6 +102,25 @@ main {
                     }
                 }
             }
+        }
+        @keyframes fadein {
+            from {
+                transform: translateX(-10px);
+                opacity:0;
+            }
+            to {
+                transform: translateX(0px);
+                opacity:1;
+            }
+        }
+        .first-plate {
+            animation: fadein 1s ease-in-out;
+        }
+        .second-plate {
+            animation: fadein 1.5s ease-in-out;
+        }
+        .third-plate {
+            animation: fadein 2s ease-in-out;
         }
     }
 }
