@@ -56,6 +56,34 @@ header nav .ctn--localisation div p {
   font-weight: 500;
 }
 
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  pointer-events: none;
+  animation: loading 1s ease-in-out 3s forwards;
+}
+.loading-screen--logo {
+  background-image: url(../../images/ohmyfood.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 35px;
+  width: 50%;
+}
+
 main {
   max-width: 768px;
 }
