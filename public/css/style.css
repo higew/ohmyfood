@@ -61,7 +61,6 @@ header nav .ctn--localisation div p {
   justify-content: center;
   align-items: center;
   margin: auto;
-  background: #9356DC;
   background: linear-gradient(149deg, #FF79DA 0%, #9356DC 100%);
   border-radius: 3rem;
   color: #fff;
@@ -69,6 +68,11 @@ header nav .ctn--localisation div p {
   border: none;
   margin-bottom: 40px;
   box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 2s ease;
+}
+.btn:hover {
+  background: linear-gradient(149deg, #f8a9e2 0%, #c092f8 100%);
+  box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.8);
 }
 
 main {
@@ -285,6 +289,19 @@ main .ctn-menu .category .food {
   border-radius: 1rem;
   padding: 10px;
   box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  transition: padding-right 450ms ease-in-out;
+}
+main .ctn-menu .category .food:hover {
+  padding-right: 55px;
+}
+main .ctn-menu .category .food:hover .food--selected {
+  opacity: 1;
+  transform: translate(-50px);
+}
+main .ctn-menu .category .food:hover .fa-check-circle {
+  transform: rotate(360deg);
 }
 main .ctn-menu .category .food--bold {
   font-size: 17px;
@@ -295,8 +312,50 @@ main .ctn-menu .category .food--row {
   flex-direction: row;
   justify-content: space-between;
 }
+main .ctn-menu .category .food--row span {
+  margin-top: 5px;
+}
 main .ctn-menu .category .food p {
   padding: 5px 0 5px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+main .ctn-menu .category .food--selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #99E2D0;
+  width: 50px;
+  height: 74px;
+  right: -50px;
+  top: 0;
+  opacity: 0;
+  transition: transform 330ms ease-in-out;
+}
+main .ctn-menu .category .food--selected .fa-check-circle {
+  color: #fff;
+  transition: transform 500ms ease-in-out;
+}
+@keyframes fadein {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+main .ctn-menu .first-plate {
+  animation: fadein 1s ease-in-out;
+}
+main .ctn-menu .second-plate {
+  animation: fadein 1.5s ease-in-out;
+}
+main .ctn-menu .third-plate {
+  animation: fadein 2s ease-in-out;
 }
 
 footer {
