@@ -265,6 +265,18 @@ main .ctn-menu .title-restau i {
   font-size: 30px;
   margin-right: 10px;
 }
+main .ctn-menu .title-restau .fill {
+  color: #000;
+}
+main .ctn-menu .title-restau .fill:hover {
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+  background: #9356DC;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
 main .ctn-menu .category {
   display: flex;
   flex-direction: column;

@@ -29,6 +29,9 @@ main {
                 font-size: 30px;
                 margin-right: 10px;
             }
+            .fill {
+                @include mixins.like-animation(variables.$color-primary);
+            }
         }
         .category {
             display: flex;

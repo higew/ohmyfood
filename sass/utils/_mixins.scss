@@ -1,3 +1,18 @@
+@use 'variables';
+
 @mixin box-shadow($shadow) {      
     box-shadow: $shadow;
+}
+
+@mixin like-animation($color-primary) {
+    color: variables.$color-black;
+    &:hover {
+        transition: 0.5s ease-in-out;
+        opacity: 1;
+        background: variables.$color-primary;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
 }
