@@ -1,7 +1,5 @@
-@import "./utils/variables";
-@import "./utils/mixins";
-@import "./base/body";
-@import "./layout/header";
-@import "./pages/main-index";
-@import "./pages/main-restaurant";
-@import "./layout/footer";
+@use "./base/body";
+@use "./layout/header";
+@use "./pages/main-index";
+@use "./composants/button";
+@use "./layout/footer";

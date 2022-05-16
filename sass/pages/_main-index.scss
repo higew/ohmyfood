@@ -1,7 +1,9 @@
-@import "../composants/button";
+@use '../utils/variables';
+@use '../utils/mixins';
+@use '../utils/keyframes';
 
 main {
-    max-width: $mobile;
+    max-width: variables.$mobile;
     .explorer {
         padding: 20px;
         background-color: #e6e6e6;
@@ -40,7 +42,7 @@ main {
                 list-style: none;
                 background-color: #f7f7f7;
                 border-radius: 3rem;
-                @include box-shadow($shadow);
+                @include mixins.box-shadow(variables.$shadow);
                 padding: 30px;
                 width: 75%;
                 &::before {
@@ -52,8 +54,8 @@ main {
                     align-items: center;
                     width: 30px;
                     height: 30px;
-                    color: $color-white;
-                    background-color: $color-primary;
+                    color: variables.$color-white;
+                    background-color: variables.$color-primary;
                     border-radius: 50%;
                     top: 50%;
                     transform: translateY(-50%);
@@ -71,13 +73,13 @@ main {
             padding: 10px;
             border-radius: 3rem;
             font-weight: 500;
-            @include box-shadow($shadow);
+            @include mixins.box-shadow(variables.$shadow);
             .number-step {
                 display: flex;
                 align-items: center;
                 position: absolute;
-                color: $color-white;
-                background-color: $color-primary;
+                color: variables.$color-white;
+                background-color: variables.$color-primary;
                 height: 30px;
                 width: 30px;
                 border-radius: 50%;
@@ -97,7 +99,7 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: $color-background-container;
+        background-color: variables.$color-background-container;
         width: 100%;
         padding-bottom: 60px;
         .titleSection {
@@ -117,17 +119,17 @@ main {
             }
             .resultRow {
                 width: 100%;
-                background-color: $color-white;
+                background-color: variables.$color-white;
                 border-radius: 10px;
-                @include box-shadow($shadow);
+                @include mixins.box-shadow(variables.$shadow);
                 .new-restaurant {
                     font-weight: bold;
-                    color: $color-new;
+                    color: variables.$color-new;
                     padding: 10px;
                     position: absolute;
                     right: 30px;
                     margin-top: 10px;
-                    background-color: $color-tertiary;
+                    background-color: variables.$color-tertiary;
                     border-radius: 5px;
                 }
                 .textContainer {
