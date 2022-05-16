@@ -111,13 +111,11 @@ main .ctn-menu .category .food {
   padding: 10px;
   box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.2);
   position: relative;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out;
 }
 main .ctn-menu .category .food:hover {
-  padding-right: 75px;
+  padding-right: 55px;
 }
 main .ctn-menu .category .food:hover .food--selected {
   opacity: 1;
@@ -135,8 +133,14 @@ main .ctn-menu .category .food--row {
   flex-direction: row;
   justify-content: space-between;
 }
+main .ctn-menu .category .food--row span {
+  margin-top: 5px;
+}
 main .ctn-menu .category .food p {
   padding: 5px 0 5px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 main .ctn-menu .category .food--selected {
   display: flex;

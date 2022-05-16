@@ -53,12 +53,10 @@ main {
                 padding: 10px;
                 @include mixins.box-shadow(variables.$shadow);
                 position: relative;
-                white-space: nowrap;
-                text-overflow: ellipsis;
                 overflow: hidden;
                 transition: padding-right 450ms ease-in-out;
                 &:hover {
-                    padding-right: 75px;
+                    padding-right: 55px;
                 }
                 &:hover .food--selected {
                     opacity: 1;
@@ -75,11 +73,16 @@ main {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    span {
+                        margin-top: 5px;
+                    }
                 }
                 p {
                     padding: 5px 0 5px 0;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
-                
                 &--selected {
                     display: flex;
                     justify-content: center;
