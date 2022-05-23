@@ -7,13 +7,18 @@ body {
 }
 
 header {
-  max-width: 768px;
   display: flex;
   flex-direction: column;
 }
 header nav {
   width: 100%;
   margin: auto;
+}
+header nav .back-arrow {
+  position: absolute;
+  color: #000;
+  font-size: 30px;
+  padding: 20px;
 }
 header nav a {
   text-decoration: none;
@@ -30,7 +35,7 @@ header nav .ctn--logo .logo {
   background-repeat: no-repeat;
   background-size: contain;
   height: 35px;
-  width: 50%;
+  width: 201px;
   margin: auto;
 }
 header nav .ctn--localisation {
@@ -56,6 +61,19 @@ header nav .ctn--localisation div p {
   font-weight: 500;
 }
 
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotate-spinner {
+  to {
+    transform: rotate(1080deg);
+  }
+}
 main {
   max-width: 768px;
 }
@@ -211,7 +229,6 @@ main .ctn-menu .third-plate {
 }
 
 footer {
-  max-width: 768px;
   background-color: rgb(61, 61, 61);
   padding: 20px;
   color: #fff;
@@ -227,6 +244,13 @@ footer .logo-footer {
 footer p {
   font-size: 15px;
   padding: 5px;
+}
+footer p i {
+  font-size: 15px;
+  padding-right: 5px;
+}
+footer p .smaller {
+  font-size: 11px;
 }
 
 /*# sourceMappingURL=style-restau.css.map */

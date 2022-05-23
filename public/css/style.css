@@ -14,6 +14,12 @@ header nav {
   width: 100%;
   margin: auto;
 }
+header nav .back-arrow {
+  position: absolute;
+  color: #000;
+  font-size: 30px;
+  padding: 20px;
+}
 header nav a {
   text-decoration: none;
 }
@@ -311,6 +317,13 @@ footer .logo-footer {
 footer p {
   font-size: 15px;
   padding: 5px;
+}
+footer p i {
+  font-size: 15px;
+  padding-right: 5px;
+}
+footer p .smaller {
+  font-size: 11px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -15,5 +15,12 @@ footer {
     p {
         font-size: 15px;
         padding: 5px;
+        i {
+            font-size: 15px;
+            padding-right: 5px;
+        }
+        .smaller {
+            font-size: 11px;
+        }
     }
 }
