@@ -74,9 +74,6 @@ header nav .ctn--localisation div p {
     transform: rotate(1080deg);
   }
 }
-main {
-  max-width: 768px;
-}
 main img {
   width: 100%;
   object-fit: cover;
@@ -207,6 +204,9 @@ main .ctn-menu .second-plate {
 }
 main .ctn-menu .third-plate {
   animation: fadein 2s ease-in-out;
+}
+main .ctn-menu .fourth-plate {
+  animation: fadein 2.5s ease-in-out;
 }
 
 .btn {

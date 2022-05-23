@@ -3,7 +3,6 @@
 @use '../utils/keyframes';
 
 main {
-    max-width: variables.$mobile;
     img {
         width: 100%;
         object-fit: cover;
@@ -124,6 +123,9 @@ main {
         }
         .third-plate {
             animation: fadein 2s ease-in-out;
+        }
+        .fourth-plate{
+            animation: fadein 2.5s ease-in-out;
         }
     }
 }
