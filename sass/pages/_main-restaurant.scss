@@ -5,6 +5,7 @@
 main {
     img {
         width: 100%;
+        height: 250px;
         object-fit: cover;
     }
     .ctn-menu {
@@ -129,3 +130,6 @@ main {
         }
     }
 }
+
+@include mixins.tablet;
+@include mixins.desktop;

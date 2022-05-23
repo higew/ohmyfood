@@ -229,6 +229,7 @@ main .searchResult .showResult a {
   color: inherit;
 }
 main .searchResult .showResult .resultRow {
+  position: relative;
   width: 100%;
   background-color: #fff;
   border-radius: 10px;
@@ -239,7 +240,7 @@ main .searchResult .showResult .resultRow .new-restaurant {
   color: #265a37;
   padding: 10px;
   position: absolute;
-  right: 30px;
+  right: 10px;
   margin-top: 10px;
   background-color: #99E2D0;
   border-radius: 5px;
@@ -282,6 +283,38 @@ main .searchResult .showResult .resultRow img {
   border-radius: 10px 10px 0px 0px;
 }
 
+@media screen and (min-width: 992px) {
+  main {
+    margin: auto;
+  }
+  main .step {
+    max-width: 1400px;
+    margin: auto;
+  }
+  main .step ol {
+    flex-direction: row;
+    width: 95%;
+  }
+  main .searchResult .titleSection {
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+  }
+  main .searchResult .showResult {
+    max-width: 1400px;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main .searchResult .showResult .resultRow {
+    width: 45%;
+  }
+
+  footer {
+    margin: auto;
+  }
+}
 .btn {
   display: flex;
   justify-content: center;

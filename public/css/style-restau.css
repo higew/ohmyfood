@@ -76,6 +76,7 @@ header nav .ctn--localisation div p {
 }
 main img {
   width: 100%;
+  height: 250px;
   object-fit: cover;
 }
 main .ctn-menu {
@@ -209,6 +210,38 @@ main .ctn-menu .fourth-plate {
   animation: fadein 2.5s ease-in-out;
 }
 
+@media screen and (min-width: 992px) {
+  main {
+    margin: auto;
+  }
+  main .step {
+    max-width: 1400px;
+    margin: auto;
+  }
+  main .step ol {
+    flex-direction: row;
+    width: 95%;
+  }
+  main .searchResult .titleSection {
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+  }
+  main .searchResult .showResult {
+    max-width: 1400px;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main .searchResult .showResult .resultRow {
+    width: 45%;
+  }
+
+  footer {
+    margin: auto;
+  }
+}
 .btn {
   display: flex;
   justify-content: center;

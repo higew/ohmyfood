@@ -1,7 +1,7 @@
 @use '../utils/variables';
 
 footer {
-    background-color: rgb(61, 61, 61);
+    background-color: variables.$color-footer;
     padding: 20px;
     color: variables.$color-white;
     .logo-footer {

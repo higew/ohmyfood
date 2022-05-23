@@ -20,7 +20,7 @@
 // Media queries
 
 @mixin tablet {
-    @media screen and (max-width: 992px){
+    @media screen and (min-width: 768px){
         main {
             
         }
@@ -31,12 +31,37 @@
 }
 
 @mixin desktop {
-    @media screen and (max-width: 1400px){
+    @media screen and (min-width: 992px){
         main {
-            
+            margin: auto;
+            .step {
+                max-width: variables.$desktop;
+                margin: auto;
+                ol {
+                    flex-direction: row;
+                    width: 95%;
+                }
+            }
+            .searchResult {
+                .titleSection {
+                    max-width: variables.$desktop;
+                    width: 100%;
+                    margin: auto;
+                }
+                .showResult {
+                    max-width: variables.$desktop;
+                    margin: auto;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .resultRow {
+                        width: 45%;
+                    }
+                }
+            }
         }
         footer {
-            
+            margin: auto;
         }
     }
 }
