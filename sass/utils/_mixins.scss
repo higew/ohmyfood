@@ -66,7 +66,11 @@
                 &--category {
                     display: flex;
                     flex-direction: row;
+                    flex-wrap: wrap;
                     margin: auto;
+                    .category {
+                        width: 29%;
+                    }
                 }
             }
         }

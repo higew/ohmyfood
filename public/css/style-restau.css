@@ -245,7 +245,11 @@ main .ctn-menu .fourth-plate {
   main .ctn-menu--category {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: auto;
+  }
+  main .ctn-menu--category .category {
+    width: 29%;
   }
 
   footer {
