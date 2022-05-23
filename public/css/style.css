@@ -7,7 +7,6 @@ body {
 }
 
 header {
-  max-width: 768px;
   display: flex;
   flex-direction: column;
 }
@@ -30,7 +29,7 @@ header nav .ctn--logo .logo {
   background-repeat: no-repeat;
   background-size: contain;
   height: 35px;
-  width: 50%;
+  width: 201px;
   margin: auto;
 }
 header nav .ctn--localisation {
@@ -87,7 +86,7 @@ header nav .ctn--localisation div p {
   background-repeat: no-repeat;
   background-size: contain;
   height: 35px;
-  width: 50%;
+  width: 201px;
 }
 .loading-screen--spinner {
   color: #99E2D0;
@@ -103,9 +102,6 @@ header nav .ctn--localisation div p {
   animation: rotate-spinner 4s infinite linear;
 }
 
-main {
-  max-width: 768px;
-}
 main .explorer {
   padding: 20px;
   background-color: #e6e6e6;
@@ -136,6 +132,7 @@ main .step ol {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 90%;
   gap: 30px;
   margin-left: 2rem;
 }
@@ -147,7 +144,6 @@ main .step li {
   border-radius: 3rem;
   box-shadow: 0px 8px 15px -3px rgba(0, 0, 0, 0.2);
   padding: 30px;
-  width: 75%;
   transition: 1s;
 }
 main .step li:hover {
@@ -300,7 +296,6 @@ main .searchResult .showResult .resultRow img {
 }
 
 footer {
-  max-width: 768px;
   background-color: rgb(61, 61, 61);
   padding: 20px;
   color: #fff;

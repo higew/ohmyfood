@@ -19,7 +19,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         height: 35px;
-        width: 50%;
+        width: 201px;
     }
     &--spinner {
         color: variables.$color-tertiary;
@@ -36,7 +36,6 @@
     }
 }
 main {
-    max-width: variables.$mobile;
     .explorer {
         padding: 20px;
         background-color: #e6e6e6;
@@ -66,6 +65,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width: 90%;
             gap: 30px;
             margin-left: 2rem;
         }
@@ -77,7 +77,6 @@ main {
                 border-radius: 3rem;
                 @include mixins.box-shadow(variables.$shadow);
                 padding: 30px;
-                width: 75%;
                 transition: 1s;
                 &:hover {
                     background-color: variables.$color-primary-lighter;
@@ -202,3 +201,5 @@ main {
         }
     }
 }
+
+@include mixins.tablet;

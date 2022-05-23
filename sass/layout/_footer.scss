@@ -1,7 +1,6 @@
 @use '../utils/variables';
 
 footer {
-    max-width: variables.$mobile;
     background-color: rgb(61, 61, 61);
     padding: 20px;
     color: variables.$color-white;

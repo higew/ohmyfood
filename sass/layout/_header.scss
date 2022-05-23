@@ -1,7 +1,6 @@
 @use "../utils/variables";
 
 header {
-    max-width: 768px;
     display: flex;
     flex-direction: column;
     nav {
@@ -20,7 +19,7 @@ header {
                     background-repeat: no-repeat;
                     background-size: contain;
                     height: 35px;
-                    width: 50%;
+                    width: 201px;
                     margin: auto;
                 }
             }
