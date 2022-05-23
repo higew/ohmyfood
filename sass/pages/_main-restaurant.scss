@@ -33,75 +33,77 @@ main {
                 @include mixins.like-animation(variables.$color-primary);
             }
         }
-        .category {
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            gap: 10px;
-            &--title {
-                font-weight: 300;
-                text-transform: uppercase;
-                padding: 5px 0 5px 0;
-            }
-            &--title:before {
-                content: "";
-                position: absolute;
-                height: 1px;
-                width: 5%;
-                padding: 10px;
-                border-bottom: 3px solid variables.$color-tertiary;
-            }
-            .food {
-                background-color: variables.$color-white;
-                border-radius: 1rem;
-                padding: 10px;
-                @include mixins.box-shadow(variables.$shadow);
-                position: relative;
-                overflow: hidden;
-                transition: padding-right 450ms ease-in-out;
-                &:hover {
-                    padding-right: 55px;
-                }
-                &:hover .food--selected {
-                    opacity: 1;
-                    transform: translate(-50px);
-                }
-                &:hover .fa-check-circle {
-                    transform: rotate(360deg) ;
-                }
-                &--bold {
-                    font-size: 17px;
-                    font-weight: 500;
-                }
-                &--row {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    span {
-                        margin-top: 5px;
-                    }
-                }
-                p {
+        &--category {
+            .category {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                gap: 10px;
+                &--title {
+                    font-weight: 300;
+                    text-transform: uppercase;
                     padding: 5px 0 5px 0;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
                 }
-                &--selected {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                &--title:before {
+                    content: "";
                     position: absolute;
-                    background-color: variables.$color-tertiary;
-                    width: 50px;
-                    height: 74px;
-                    right: -50px;
-                    top: 0;
-                    opacity: 0;
-                    transition: transform 330ms ease-in-out;
-                    & .fa-check-circle {
-                        color: #fff;
-                        transition: transform 500ms ease-in-out;
+                    height: 1px;
+                    width: 5%;
+                    padding: 10px;
+                    border-bottom: 3px solid variables.$color-tertiary;
+                }
+                .food {
+                    background-color: variables.$color-white;
+                    border-radius: 1rem;
+                    padding: 10px;
+                    @include mixins.box-shadow(variables.$shadow);
+                    position: relative;
+                    overflow: hidden;
+                    transition: padding-right 450ms ease-in-out;
+                    &:hover {
+                        padding-right: 55px;
+                    }
+                    &:hover .food--selected {
+                        opacity: 1;
+                        transform: translate(-50px);
+                    }
+                    &:hover .fa-check-circle {
+                        transform: rotate(360deg) ;
+                    }
+                    &--bold {
+                        font-size: 17px;
+                        font-weight: 500;
+                    }
+                    &--row {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        span {
+                            margin-top: 5px;
+                        }
+                    }
+                    p {
+                        padding: 5px 0 5px 0;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    &--selected {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        background-color: variables.$color-tertiary;
+                        width: 50px;
+                        height: 74px;
+                        right: -50px;
+                        top: 0;
+                        opacity: 0;
+                        transition: transform 330ms ease-in-out;
+                        & .fa-check-circle {
+                            color: #fff;
+                            transition: transform 500ms ease-in-out;
+                        }
                     }
                 }
             }

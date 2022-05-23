@@ -310,6 +310,16 @@ main .searchResult .showResult .resultRow img {
   main .searchResult .showResult .resultRow {
     width: 45%;
   }
+  main .ctn-menu {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .ctn-menu--category {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
 
   footer {
     margin: auto;
