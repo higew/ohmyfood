@@ -5,8 +5,19 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/style.scss:./public/css/style.css",
-    "sassR" : "sass --watch ./sass/style-restau.scss:./public/css/style-restau.css"
+    "sassR": "sass --watch ./sass/style-restau.scss:./public/css/style-restau.css",
+    "autoprefix": "postcss ./public/css/style.css -u autoprefixer -o ./public/css/stylemain.css",
+    "build": "postcss ./public/css/style.css -u autoprefixer cssnano -o ./public/css/stylecompressed.css",
+    "buildR": "postcss ./public/css/style-restau.css -u autoprefixer cssnano -o ./public/css/stylecompressedRestau.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.8"
+  }
 }

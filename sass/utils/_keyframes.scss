@@ -1,0 +1,15 @@
+@keyframes loading {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes rotate-spinner {
+    from {
+    }
+    to {
+        transform: rotate(1080deg);
+    }
+}
