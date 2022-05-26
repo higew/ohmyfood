@@ -108,16 +108,7 @@ main {
                 }
             }
         }
-        @keyframes fadein {
-            from {
-                transform: translateX(-10px);
-                opacity:0;
-            }
-            to {
-                transform: translateX(0px);
-                opacity:1;
-            }
-        }
+        
         .first-plate {
             animation: fadein 1s ease-in-out;
         }

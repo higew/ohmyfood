@@ -74,6 +74,16 @@ header nav .ctn--localisation div p {
     transform: rotate(1080deg);
   }
 }
+@keyframes fadein {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 .loading-screen {
   display: flex;
   flex-direction: column;

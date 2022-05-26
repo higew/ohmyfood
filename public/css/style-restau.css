@@ -74,6 +74,16 @@ header nav .ctn--localisation div p {
     transform: rotate(1080deg);
   }
 }
+@keyframes fadein {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 main img {
   width: 100%;
   height: 250px;
@@ -186,16 +196,6 @@ main .ctn-menu--category .category .food--selected {
 main .ctn-menu--category .category .food--selected .fa-check-circle {
   color: #fff;
   transition: transform 500ms ease-in-out;
-}
-@keyframes fadein {
-  from {
-    transform: translateX(-10px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
 }
 main .ctn-menu .first-plate {
   animation: fadein 1s ease-in-out;
