@@ -124,6 +124,9 @@ main .ctn-menu .title-restau .fill:hover {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
+main .ctn-menu--category {
+  width: 100%;
+}
 main .ctn-menu--category .category {
   display: flex;
   flex-direction: column;
@@ -144,6 +147,7 @@ main .ctn-menu--category .category--title:before {
   border-bottom: 3px solid #99E2D0;
 }
 main .ctn-menu--category .category .food {
+  cursor: pointer;
   background-color: #fff;
   border-radius: 1rem;
   padding: 10px;

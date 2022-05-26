@@ -34,6 +34,7 @@ main {
             }
         }
         &--category {
+            width: 100%;
             .category {
                 display: flex;
                 flex-direction: column;
@@ -53,6 +54,7 @@ main {
                     border-bottom: 3px solid variables.$color-tertiary;
                 }
                 .food {
+                    cursor: pointer;
                     background-color: variables.$color-white;
                     border-radius: 1rem;
                     padding: 10px;
