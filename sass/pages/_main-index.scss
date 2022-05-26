@@ -98,6 +98,13 @@ main {
                     transform: translateY(-50%);
                     margin-left: -40px;
                 }
+                i {
+                    color: #808080;
+                    padding: 0px 10px 0px 10px;
+                    &:hover {
+                        color: variables.$color-primary;
+                    }
+                }
         }
         .step-background {
             display: flex;

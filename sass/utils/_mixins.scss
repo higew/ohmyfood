@@ -22,10 +22,17 @@
 @mixin tablet {
     @media screen and (min-width: 768px){
         main {
-            
-        }
-        footer {
-            
+            margin: auto;
+            .searchResult {
+                .showResult {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .resultRow {
+                        width: 45%;
+                    }
+                }
+            }
         }
     }
 }
