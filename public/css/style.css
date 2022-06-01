@@ -387,6 +387,8 @@ main .searchResult .showResult .resultRow img {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(61, 61, 61);
   padding: 20px;
   color: #fff;
@@ -400,7 +402,6 @@ footer .logo-footer {
   margin: 10px 0px 10px 5px;
 }
 footer p {
-  font-size: 15px;
   padding: 5px;
 }
 footer p i {
@@ -410,9 +411,9 @@ footer p i {
 footer p .smaller {
   font-size: 11px;
 }
-footer a {
+footer p a {
   font-size: 15px;
-  padding: 5px;
+  padding: 5px 0px 5px 0px;
   text-decoration: none;
   color: #fff;
 }
