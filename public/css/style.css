@@ -277,21 +277,27 @@ main .searchResult .showResult .resultRow .textContainer .resultName {
 main .searchResult .showResult .resultRow .textContainer .resultLoc {
   padding: 5px;
 }
-main .searchResult .showResult .resultRow .textContainer i {
+main .searchResult .showResult .resultRow .textContainer .heart-animation {
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
   font-size: 20px;
-  padding: 0px 10px 0px 0px;
 }
-main .searchResult .showResult .resultRow .textContainer .fill {
-  color: #000;
-}
-main .searchResult .showResult .resultRow .textContainer .fill:hover {
-  transition: 0.5s ease-in-out;
-  opacity: 1;
-  background: #9356DC;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+main .searchResult .showResult .resultRow .textContainer .heart-animation .fill {
+  position: absolute;
+  bottom: 0;
+  font-size: 0px;
+  opacity: 0;
+  color: #9356DC;
   font-weight: bold;
+}
+main .searchResult .showResult .resultRow .textContainer .heart-animation:hover .fill {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  font-size: 20px;
+  transition: 1.5s;
 }
 main .searchResult .showResult .resultRow img {
   width: 100%;

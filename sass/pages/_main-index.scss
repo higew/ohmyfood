@@ -191,11 +191,8 @@ main {
                     .resultLoc {
                         padding: 5px;
                     }
-                    i {
-                        font-size: 20px;
-                        padding: 0px 10px 0px 0px;
-                    }
-                    .fill {
+                    .heart-animation {
+                        margin-right: 10px;
                         @include mixins.like-animation(variables.$color-primary);
                     }
                 }

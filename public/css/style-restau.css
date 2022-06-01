@@ -113,16 +113,25 @@ main .ctn-menu .title-restau i {
   margin-right: 10px;
 }
 main .ctn-menu .title-restau .fill {
-  color: #000;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
 }
-main .ctn-menu .title-restau .fill:hover {
-  transition: 0.5s ease-in-out;
-  opacity: 1;
-  background: #9356DC;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+main .ctn-menu .title-restau .fill .fill {
+  position: absolute;
+  bottom: 0;
+  font-size: 0px;
+  opacity: 0;
+  color: #9356DC;
   font-weight: bold;
+}
+main .ctn-menu .title-restau .fill:hover .fill {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  font-size: 20px;
+  transition: 1.5s;
 }
 main .ctn-menu--category {
   width: 100%;

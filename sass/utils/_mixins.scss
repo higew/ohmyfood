@@ -5,15 +5,26 @@
 }
 
 @mixin like-animation($color-primary) {
-    color: variables.$color-black;
-    &:hover {
-        transition: 0.5s ease-in-out;
-        opacity: 1;
-        background: variables.$color-primary;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    .fill {
+        position: absolute;
+        bottom: 0;
+        font-size: 0px;
+        opacity: 0;
+        color: variables.$color-primary;
         font-weight: bold;
+    }
+    &:hover {
+        .fill {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 1;
+            font-size: 20px;
+            transition: 1.5s;
+        }
     }
 }
 
