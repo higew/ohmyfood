@@ -124,10 +124,12 @@ main .explorer {
 }
 main .explorer h1 {
   padding: 20px 20px 10px 20px;
-  font-size: 22px;
+  font-size: 26px;
   text-align: center;
 }
 main .explorer p {
+  font-size: 18px;
+  font-weight: 300;
   text-align: center;
   padding: 10px 20px 30px 20px;
 }
@@ -138,7 +140,7 @@ main .step {
   counter-reset: list;
 }
 main .step h1 {
-  font-size: 20px;
+  font-size: 25px;
   width: 85%;
   padding: 20px;
   margin-top: 30px;
@@ -153,6 +155,7 @@ main .step ol {
   margin-left: 2rem;
 }
 main .step li {
+  font-weight: 500;
   position: relative;
   flex-grow: 1;
   list-style: none;
@@ -230,7 +233,7 @@ main .searchResult {
   padding-bottom: 60px;
 }
 main .searchResult .titleSection {
-  font-size: 20px;
+  font-size: 25px;
   padding: 50px 20px 20px 20px;
   font-weight: bold;
 }
@@ -275,6 +278,7 @@ main .searchResult .showResult .resultRow .textContainer .resultName {
   padding: 5px;
 }
 main .searchResult .showResult .resultRow .textContainer .resultLoc {
+  font-weight: 300;
   padding: 5px;
 }
 main .searchResult .showResult .resultRow .textContainer .heart-animation {
