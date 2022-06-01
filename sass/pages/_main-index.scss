@@ -192,8 +192,14 @@ main {
                         padding: 5px;
                     }
                     .heart-animation {
+                        font-size: 20px;
                         margin-right: 10px;
                         @include mixins.like-animation(variables.$color-primary);
+                        &:hover {
+                            .fill {
+                                font-size: 20px;
+                            }
+                        }
                     }
                 }
                 img {

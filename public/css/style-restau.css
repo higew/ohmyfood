@@ -108,16 +108,13 @@ main .ctn-menu .title-restau h1 {
   font-family: Shrikhand;
   font-size: 30px;
 }
-main .ctn-menu .title-restau i {
+main .ctn-menu .title-restau .heart-animation {
   font-size: 30px;
   margin-right: 10px;
-}
-main .ctn-menu .title-restau .fill {
   position: relative;
   cursor: pointer;
-  font-size: 20px;
 }
-main .ctn-menu .title-restau .fill .fill {
+main .ctn-menu .title-restau .heart-animation .fill {
   position: absolute;
   bottom: 0;
   font-size: 0px;
@@ -125,13 +122,15 @@ main .ctn-menu .title-restau .fill .fill {
   color: #9356DC;
   font-weight: bold;
 }
-main .ctn-menu .title-restau .fill:hover .fill {
+main .ctn-menu .title-restau .heart-animation:hover .fill {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   opacity: 1;
-  font-size: 20px;
   transition: 1.5s;
+}
+main .ctn-menu .title-restau .heart-animation:hover .fill {
+  font-size: 30px;
 }
 main .ctn-menu--category {
   width: 100%;

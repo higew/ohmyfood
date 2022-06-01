@@ -7,7 +7,6 @@
 @mixin like-animation($color-primary) {
     position: relative;
     cursor: pointer;
-    font-size: 20px;
     .fill {
         position: absolute;
         bottom: 0;
@@ -22,7 +21,6 @@
             left: 50%;
             transform: translateX(-50%);
             opacity: 1;
-            font-size: 20px;
             transition: 1.5s;
         }
     }

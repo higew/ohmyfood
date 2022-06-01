@@ -278,10 +278,10 @@ main .searchResult .showResult .resultRow .textContainer .resultLoc {
   padding: 5px;
 }
 main .searchResult .showResult .resultRow .textContainer .heart-animation {
+  font-size: 20px;
   margin-right: 10px;
   position: relative;
   cursor: pointer;
-  font-size: 20px;
 }
 main .searchResult .showResult .resultRow .textContainer .heart-animation .fill {
   position: absolute;
@@ -296,8 +296,10 @@ main .searchResult .showResult .resultRow .textContainer .heart-animation:hover 
   left: 50%;
   transform: translateX(-50%);
   opacity: 1;
-  font-size: 20px;
   transition: 1.5s;
+}
+main .searchResult .showResult .resultRow .textContainer .heart-animation:hover .fill {
+  font-size: 20px;
 }
 main .searchResult .showResult .resultRow img {
   width: 100%;

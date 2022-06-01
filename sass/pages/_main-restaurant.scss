@@ -25,12 +25,15 @@ main {
                 font-family: variables.$titlefont;
                 font-size: 30px;
             }
-            i {
+            .heart-animation {
                 font-size: 30px;
                 margin-right: 10px;
-            }
-            .fill {
                 @include mixins.like-animation(variables.$color-primary);
+                &:hover {
+                    .fill {
+                        font-size: 30px;
+                    }
+                }
             }
         }
         &--category {
