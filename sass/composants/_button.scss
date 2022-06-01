@@ -18,4 +18,7 @@
         background: linear-gradient(149deg, #f8a9e2 0%, #c092f8 100%);
         box-shadow: variables.$shadow-hover; 
     }
+    &--larger {
+        padding: 20px 50px;
+    }
 }
